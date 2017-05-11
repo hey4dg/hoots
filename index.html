@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+	<meta charset="UTF-8" /> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hoots</title>
+	<link rel="stylesheet" href="styles.css" type="text/css" />
+	<link rel="icon" type="image/png" href="hoot_logo.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Abel');
+</style>
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Raleway:800');
+</style>
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400');
+</style>
+
+<body>
+	<div class="container">
+		<img class="logo" src="hoot_logo.png"/>
+	</div>
+
+	<div class="nav-bar">
+			<div class="nav">
+				<ul>
+					<li><a href="index.html#home" onclick="scrollToTop()">welcome
+					</a></li><li><a href="tutor.html">become a tutor
+					</a></li><li><a href="scheduling.html">scheduling
+					</a></li><li><a href="index.html#contact" onclick="scrollToBottom()">contact
+					</a></li>
+				</ul>
+			</div>
+	</div>
+
+	<div class="home" id="home">
+		<div class="side-text left">
+			<h1><a href="tutor.html">For Tutors <span class="arrow"><<</span></a></h1>
+		</div><div class="home-contents">
+			<h1 class="text">CHOOSE ONE<br>TO GET<br>STARTED<br></h1>
+		</div><div class="side-text right">
+			<h1><a href="scheduling.html#mentee"><span class="arrow">>></span> For Mentees</a></h1>
+		</div>
+	</div>
+
+	<div class="about">
+		<h1 class="title">OUR MOTIVATIONS & VALUES</h1>
+		<div class="text-wrapper">
+			<p>MISSION---The Hoot team's mission is to provide a simple, accessible platform to easily match tutors and mentees within the UVa community.<br><br>
+			ABOUT US---Hoots is a non-profit, student-run tutoring platform designed with flexibility and simplicity in mind. Hoots was designed and implemented with the sole purpose of providing increased access to tutoring services for UVa students. We strive to enable peer-to-peer connections. Hoots arose from a startling need for tutors in the wake of departmental failures to provide adequate resources. Broken links and out-of-date information called for the necessary, universal tutoring platform that Hoots exemplifies.<br><br>
+			Our tutors have the ability to expose themselves to the entirety of the UVA student body, schedule sessions on their time, and eliminate restricted departments with only a one-time annual fee. Mentees can immediately find the help they need, browse through different cost options, and schedule appointments easily on our site.<br><br>
+			Hoots is proud to serve the UVa community and thus is also committed to upholding the honor code that makes our school such a unique and vibrant community of trust.
+			<br><br>Hoots was created by Kelley Carstons, Aiden Landen, Kathleen Mitchum, Thomas Rogers, and Ethan Zell, with the help of the wonderful people at ReinventED.
+			<br><br>Please, enjoy hooting!</p>
+		</div><div class="partnership">
+			<h1>IN PARTNERSHIP WITH:</h1>
+			<img class="rlogo" src="reinvent.png"/>
+		</div>
+	</div>
+
+	<section class="contact" id="contact">
+		<div class="contact-info">
+			<h1>Email virginiahoots@gmail.com for any questions or feedback.<br><br>Don't forget to like us on facebook!</h1>
+		</div><div class="contact-wrapper">
+				<div class="form_wrapper">
+					<form class="contact-form" name="contact-form" method="post" action="send_form_email.php">
+						<h1>CONTACT US</h1>
+						<div class="form_errors"></div>
+						<div class="name">Name</div>
+							<input type="text" name="name"><br>
+						<div class="email">Email</div>
+							<input class="first-input" type="text" name="email"><br>
+						<div class="message">Message</div>
+							<textarea name="message" placeholder="What can we help you with?"></textarea><br>
+						<input type="submit" value="submit">
+					</form>
+				</div>
+				<div class="message_sent">
+					<h1 class="sent">Thanks for your message!<br>We will be in touch.</h1>
+				</div>
+		</div>
+	</section>
+
+<script src="main.js"></script>
+
+</body>
+</html>

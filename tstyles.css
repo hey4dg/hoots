@@ -1,0 +1,153 @@
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding-top: 20px;
+	display: inline-block;
+
+}
+
+li {
+	font-family: 'Abel', sans-serif;
+	font-size: 24px;
+	display: inline-block;
+	padding: 0 20px;
+	color: #637F9C;
+	cursor: pointer;
+}
+a {
+	color: #637F9C;
+	text-decoration: none;
+	font-family: ;
+	text-align: center;
+}
+
+/******** COLORS **********/
+/* blue/grey: #637F9C */
+/* font: #002e5d */
+/* orange: #ff5c00 
+font-family: 'Noto Serif', serif;
+*/
+
+.container {
+	position: relative;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.logo {
+	width: 68px;
+	position: absolute;
+	top: 1%;
+	right: 2%;
+	display: inline-block;
+	z-index: 10;
+	position: fixed;
+}
+
+.nav-bar {
+	position: fixed;
+	background-color: white;
+	width: 100%;
+	margin: 0 auto;
+	height: 80px;
+	z-index: 1;	
+}
+
+.nav {
+	display: inline-block;
+	vertical-align: top;
+	width: 90%;
+	margin: 0 auto;
+	text-align: right;
+	overflow-x: hidden;
+}
+
+a:hover {
+	color: #002e5d;
+}
+
+.header {
+	font-family: 'Raleway', sans-serif;
+	color: #637F9C;
+	text-align: center;	
+	font-size: 60px;
+	margin-top: 8%;
+	margin-bottom:0;
+	padding: 0;
+}
+
+.row {
+	width: 100%;
+	margin: 0 auto;
+	overflow-x: hidden;
+	margin-bottom: 3%;
+	margin-top: 3%;
+}
+
+.list-wrapper {
+	width: 85%;
+	margin: 0 auto;
+}
+
+ul.list {
+	color: #637F9C;
+	margin: 0;
+
+}
+
+li.list-item {
+	font-family: 'Abel', sans-serif;
+	font-size: 20px;
+	padding-top: 20px;
+	color: #637F9C;
+}
+
+.button {
+	padding: 20px;
+	font-family: 'Raleway', sans-serif;
+	color: #637F9C;
+	border: 2px solid #637F9C;
+	color: #637F9C;
+	text-align: center;
+	width: 25%;
+	margin: 0 auto;
+	font-size: 20px;
+}
+
+.button:hover {
+	color: #002e5d;
+}
+
+.info {
+	width: 50%;
+	margin: 0 auto;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.row h1 {
+	font-family: 'Raleway', sans-serif;
+	color: #637F9C;
+	font-size: 22px;
+	text-align: center;
+}
+
+.info p {
+	padding-left: 100px;
+	padding-right: 100px;
+	font-family: 'Abel', sans-serif;
+	font-size: 18px;
+	color: #002e5d;
+}
+
+.link {
+	color: #637F9C;
+	font-family: ;
+	text-align: center;
+}
+
