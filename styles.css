@@ -85,7 +85,7 @@ a:hover {
 	margin-top: 15%;
 	margin-left: 5%;
 	margin-right: 5%;
-	background: url("rotunda.png") no-repeat center center;
+	background: url("rotunda-01.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -183,6 +183,7 @@ a:hover {
 	width: 50%;
 	display: block;
 	margin: 0 auto;
+	padding-bottom: 20px;
 }
 
 .contact {
