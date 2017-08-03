@@ -83,8 +83,8 @@ a:hover {
 	display: inline-block;
 	margin: 0 auto;
 	margin-top: 15%;
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: 30px;
+	margin-right: 30px;
 	background: url("rotunda-01.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -94,7 +94,7 @@ a:hover {
 }
 
 .side-text {
-	width: 32%;
+	width: calc(37.5% - 30px);
 	display: inline-block;
 	margin: 0 auto;
 	margin-top: 27%;
@@ -133,18 +133,39 @@ a:hover {
 	color: #002e5d;
 }
 
+.mobile {
+	display: none;
+	width: 100%;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+.button {
+	width: 200px;
+	display: block;
+	margin: 0 auto;
+	border: 2px solid #637F9C;
+	font-family: 'Abel', sans-serif;
+	color: #637F9C;	
+	font-size: 25px;
+	padding: 10px;
+	text-align: center;
+	margin-top: 3%;
+}
+
 .about {
-	height: 100vh;
 	width: 100%;
 	margin: 0 auto;
 	overflow-x: hidden;
 	background-color: #637F9C;
+	overflow-y: hidden;
 }
 
 .title {
 	font-family: 'Raleway', sans-serif;
 	color: white;	
 	font-size: 60px;
+	margin: 0;
 	margin-left: 5%;
 	margin-top: 5%;
 }
@@ -160,6 +181,7 @@ a:hover {
 	width: 60%;
 	margin-left: 5%;
 	margin-right: 10%;
+	margin-bottom: 5%;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -190,7 +212,8 @@ a:hover {
 	width: 100%;
 	overflow-x: hidden;
 	background-color: white;
-	height: 90vh;
+	margin-bottom: 5%;
+	margin-top: 5%;
 }
 
 .contact-info {
@@ -304,4 +327,194 @@ textarea {
 	font-family: 'Raleway', sans-serif;
 }
 
+/***************************
+      MEDIA QUERIES 
+***************************/
+
+@media screen and (max-width: 1323px) {
+	.title {
+		font-size: 50px;
+	}
+}
+@media screen and (max-width: 1173px) {
+	.title {
+		font-size: 40px;
+	}
+	.home-contents{
+		width: 30%;
+	}
+	.text {
+		font-size: 40px;
+	}
+	.side-text {
+		width: calc(35% - 30px);
+	}
+}
+@media screen and (max-width: 1013px) {
+	.about p {
+		font-size: 17px;
+		letter-spacing: .05em;
+	}
+}
+
+@media screen and (max-width: 977px) {
+	.title {
+		font-size: 30px;
+	}
+	.home-contents{
+		width: 35%;
+	}
+	.side-text {
+		width: calc(32.5% - 30px);
+	}
+	.text {
+		font-size: 38px;
+	}
+	.side-text, .arrow {
+		font-size: 32px;
+	}
+
+}
+
+
+@media screen and (max-width: 850px) {
+	.title {
+		margin-left: 12%;
+	}
+	.home-contents{
+		height: 300px;
+		display: block;
+		margin: 0 auto;
+	}
+	.text {
+		font-size: 30px;
+		padding-top: 120px;
+	}
+	.side-text, .arrow {
+		display: none;
+	}
+	.mobile{
+		display: block;
+	}
+	.contact {
+		display: -webkit-flex;
+	    -webkit-flex-direction: column-reverse;
+	}
+	.contact-info, .contact-wrapper {
+		display: block;
+		width: 100%;
+		margin: 0 auto
+	}
+
+	.contact-info h1{
+		margin: 5% 0;
+		text-align: center;
+		font-size: 20px;
+	}
+
+}
+
+
+@media screen and (max-width: 837px) {
+	.about p {
+		font-size: 16px;
+		letter-spacing: 0.07em
+	}
+	.text-wrapper {
+		display: block;
+		width: 75%;
+		margin: 0 auto;
+
+	}
+	.partnership {
+		display: block;
+		width: 40%;
+		margin:0 auto;
+		vertical-align: top;
+		padding-top: 5%;
+	}
+}
+
+@media screen and (max-width: 700px){
+
+	.home-contents{
+		width: 45%;
+	}
+	.contact-info h1{
+		font-size: 16px;
+		padding: 20px;
+	}
+	.contact-form h1 {
+		font-size: 40px;
+	}
+
+}
+@media screen and (max-width: 600px){
+
+	.home-contents{
+		width: 55%;
+	}
+	.logo {
+		width: 60px;
+	}
+
+	.partnership h1 {
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 500px){
+
+	.home-contents{
+		width: 65%;
+	}
+	.button {
+		margin-top: 5%;
+	}
+	li {
+		font-size: 20px;
+		padding: 0 10px;
+	}
+	ul {
+		width: 100%;
+		padding: 0;
+		padding-top: 20px;
+	}
+	.nav {
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.partnership h1 {
+		font-size: 16px;
+	}
+	.contact-form h1 {
+		font-size: 30px;
+	}
+
+}
+@media screen and (max-width: 375px){
+	.logo {
+		width: 55px;
+	}
+	li {
+		font-size: 18px;
+		padding: 0 20px 0 0;
+		text-align: center;
+		}
+}
+@media screen and (max-width: 320px){
+	.logo {
+		width: 45px;
+	}
+	li {
+		font-size: 18px;
+		padding: 0 15px 0 0;
+		}
+	.home-contents {
+		width: 70%;
+		margin-top: 0;
+		vertical-align: top;
+	}
+}
 

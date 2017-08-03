@@ -81,7 +81,7 @@ a:hover {
 	padding: 0;
 }
 
-.row {
+.row, .row2 {
 	width: 100%;
 	margin: 0 auto;
 	overflow-x: hidden;
@@ -188,40 +188,6 @@ textarea {
 	font-family: 'Raleway', sans-serif;
 }
 
-.list-wrapper {
-	width: 85%;
-	margin: 0 auto;
-}
-
-ul.list {
-	color: #637F9C;
-	margin: 0;
-
-}
-
-li.list-item {
-	font-family: 'Abel', sans-serif;
-	font-size: 20px;
-	padding-top: 20px;
-	color: #637F9C;
-}
-
-.button {
-	padding: 20px;
-	font-family: 'Raleway', sans-serif;
-	color: #637F9C;
-	border: 2px solid #637F9C;
-	color: #637F9C;
-	text-align: center;
-	width: 25%;
-	margin: 0 auto;
-	font-size: 20px;
-}
-
-.button:hover {
-	color: #002e5d;
-}
-
 .info {
 	width: 50%;
 	margin: 0 auto;
@@ -231,8 +197,6 @@ li.list-item {
 
 .row h1 {
 	font-family: 'Raleway', sans-serif;
-	/*color: #637F9C;*/
-	/*font-size: 22px;*/
 	text-align: center;
 }
 
@@ -248,4 +212,134 @@ li.list-item {
 	color: #637F9C;
 	font-family: ;
 	text-align: center;
+}
+
+/***************************
+      MEDIA QUERIES 
+***************************/
+
+@media screen and (max-width: 1200px) {
+	.row h1, .row2 h1{
+		font-size: 25px;
+	}
+}
+@media screen and (max-width: 1013px) {
+	.info {
+		width: 60%;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 977px) {
+	.header {
+		font-size: 50px;
+	}
+	.info {
+		width: 90%;
+		display: block;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.info p {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+
+
+@media screen and (max-width: 800px) {
+	.header {
+		margin-top: 15%;
+	}
+	.schedule, .title {
+		display: block;
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	.row2 {
+		display: -webkit-flex;
+	    -webkit-flex-direction: column-reverse;
+	}
+
+	.title h1{
+		margin-bottom: 5%;
+		font-size: 20px;
+		border: none;
+		border-bottom: 2px solid #002e5d;
+	}
+	.title{
+		padding-top: 0;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.header {
+		font-size: 40px;
+		margin-top: 20%;
+	}
+}
+@media screen and (max-width: 600px){
+	.logo {
+		width: 60px;
+	}
+	form {
+		width: 80%;
+	}
+
+}
+@media screen and (max-width: 500px){
+	li {
+		font-size: 20px;
+		padding: 0 10px;
+	}
+	ul {
+		width: 100%;
+		padding: 0;
+		padding-top: 20px;
+	}
+	.nav {
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+	
+
+}
+@media screen and (max-width: 400px){
+	.header {
+		font-size: 30px;
+		margin-top: 20%;
+	}
+	input[type="submit"] {
+		width: 40%;
+	}
+
+}
+@media screen and (max-width: 375px){
+	.logo {
+		width: 55px;
+	}
+	li {
+		font-size: 18px;
+		padding: 0 20px 0 0;
+		text-align: center;
+	}
+	.header {
+		margin-top: 25%;
+	}
+}
+@media screen and (max-width: 320px){
+	.logo {
+		width: 45px;
+	}
+	li {
+		font-size: 18px;
+		padding: 0 15px 0 0;
+	}
+	form {
+		width: 90%;
+	}
 }
